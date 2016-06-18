@@ -1,7 +1,7 @@
 ---
 username: ludolphus
 name: Steven van Loef
-bitcoin:08154711
+bitcoin: 08154711
 ---
 
 [xfer.li](http://cloud-app.net/welcome)
