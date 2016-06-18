@@ -13,18 +13,16 @@ $(function () {
     }
 
 
-    [0, 1].forEach(function (index) {
-      document.querySelectorAll("input.animated-search-filter")[index].addEventListener("input", function () {
-        var re = new RegExp(this.value, "i");
-        texts.forEach(function (element, index) {
-          if (re.test(element)) {
-            items[index].classList.remove("hidden")
-          }
-          else {
-            items[index].classList.add("hidden")
-          }
-        })
+    document.querySelector("input.animated-search-filter").addEventListener("input", function () {
+      var re = new RegExp(this.value, "i");
+      texts.forEach(function (element, index) {
+        if (re.test(element)) {
+          items[index].classList.remove("hidden")
+        }
+        else {
+          items[index].classList.add("hidden")
+        }
       })
-    });
+    })
   })();
 });
