@@ -14,6 +14,11 @@
     <script src="/js/animated-search-filter.js"></script>
 
     <script src="/js/site.js"></script>
+
+
+    <style></style>
+
+
 </head>
 <body>
 
@@ -21,40 +26,38 @@
     App.Net</h1></a>
 
 <main class="site-content container">
-    <div class="col-sm-12">
-        <div class="col-sm-7">
-            <form class="visible-xs" action="/">
-                <div class="input-group search-field">
-                    <input type="text" name="search" class="form-control animated-search-filter"
-                           placeholder="Search for developer or app">
-                    <span class="input-group-btn"><button class="btn btn-default" type="submit">Go!</button></span>
-                </div>
-            </form>
 
-            <div class="animated-search-filter">
-                {{ content }}
-            </div>
-        </div>
 
-        <div class="sidebar col-sm-5">
-            <form class="hidden-xs" action="/">
-                <div class="input-group search-field">
-                    <input type="text" name="search" class="form-control animated-search-filter"
-                           placeholder="Search for developer or app">
-                    <span class="input-group-btn"><button class="btn btn-default" type="submit">Go!</button></span>
-                </div>
-            </form>
-            <p>
-                <img src="/img/logo.png" alt="UPDIP Logo" class="logo animated" id="logo">
+    <div class="content">
 
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
+        <div class="animated-search-filter">
+
+            {{ content }}
+
         </div>
     </div>
+
+
+    <div id="sidebar" class="sidebar">
+        <form action="/">
+            <div class="input-group search-field">
+                <input type="text" name="search" class="form-control animated-search-filter"
+                       placeholder="Search for developer or app">
+                <span class="input-group-btn"><button class="btn btn-default" type="submit">Go!</button></span>
+            </div>
+        </form>
+        <p>
+            <img src="/img/logo.png" alt="UPDIP Logo" class="logo animated" id="logo">
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+        </p>
+    </div>
+
+
 </main>
 
 {% include footer.html %}

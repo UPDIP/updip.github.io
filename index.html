@@ -104,6 +104,8 @@ layout: default
 {% endfor %}
 
 <div class="paginator">
-    {% if paginator.next_page %}<span class="paginator-next"><a href="{{ paginator.next_page_path}}">Next</a></span>{% endif %}
-    {% if paginator.previous_page %}<span class="paginator-previous"><a href="{{ paginator.previous_path }}">Prev</a></span>{% endif %}
+    {% if paginator.next_page %}<span class="paginator-next"><a href="{{ paginator.next_page_path}}">Next</a></span>{%
+    endif %}
+    {% if paginator.previous_page %}<span class="paginator-previous"><a
+        href="{{ paginator.previous_path }}">Prev</a></span>{% endif %}
 </div>
