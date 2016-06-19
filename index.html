@@ -94,6 +94,18 @@ layout: default
                 </div>
                 {% endif %}
 
+                {% if card.cashme %}
+                <!-- Patreon -->
+                <div class="form-group">
+                    <label for="cashme" class="col-sm-3 control-label">Cashme</label>
+                    <div class="col-sm-9">
+                        <div>
+                            <a href="{{ card.cashme }}" class="btn btn-success" target="_blank">Donate via CashMe</a>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+
 
             </div>
         </div>
