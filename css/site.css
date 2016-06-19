@@ -1,5 +1,5 @@
 body {
-    font-family: 'HKGroteskRegular';
+    font-family: 'HKGroteskRegular', sans-serif;
     font-weight: normal;
     font-style: normal;
     background: url('/img/background.jpg') no-repeat center fixed;
@@ -24,7 +24,7 @@ a.headline, a.headline:hover {
 }
 
 .search-field input {
-    font-family: 'HKGroteskRegular';
+    font-family: 'HKGroteskRegular', sans-serif;
 }
 
 .logo {
@@ -159,13 +159,11 @@ h1.main-head {
 
 .sidebar {
     background: white;
-    padding: 1em;
     color: rgba(46, 42, 44, 0.93);
 
     opacity: 0.95;
     font-size: 1.2em;
 
-    border-radius: 10px;
     width: 32%;
     float: right;
 
@@ -225,4 +223,3 @@ div.col-sm-9.user-description {
     right: -30px;
     width: 68%;
 }
-
