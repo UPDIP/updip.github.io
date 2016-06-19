@@ -194,6 +194,7 @@ h1.main-head {
     margin-top: 2em;
     transition: all 0.5s ease;
 }
+
 /*.sidebar:hover {*/
 /*-webkit-transform: scale(1.05, 1.05);*/
 /*transform: scale(1.05, 1.05)*/
@@ -215,4 +216,13 @@ h1.main-head {
 /*.sidebar:hover:after {*/
 /*opacity: 1;*/
 /*}*/
+
+div.col-sm-9.user-description {
+    border-bottom: 1px dashed lightgrey;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    right: -30px;
+    width: 68%;
+}
 
