@@ -224,3 +224,19 @@ div.col-sm-9.user-description {
     right: -30px;
     width: 68%;
 }
+
+.disclaimer {
+
+}
+
+p.disclaimer {
+    margin-top: calc(0.5em + 3px);
+}
+
+p.disclaimer > strong {
+    color: rgb(193, 0, 0);
+    background: white;
+    padding: 3px;
+    border-radius: 3px;
+    margin-right: 2px;
+}
