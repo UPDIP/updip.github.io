@@ -12,7 +12,8 @@ layout: default
 
             <div class="row">
                 <div class="col-sm-3 text-right">
-                    <img src="http://img.updip.link/profiles/{{ card.username }}.png" alt="Avatar" class="img-avatar img-rounded img-responsive">
+                    <img src="/img/missing.png" data-src="http://img.updip.link/profiles/{{ card.username }}.png"
+                         alt="Avatar" class="img-avatar img-rounded img-responsive lazy">
                 </div>
                 <div class="col-sm-9 user-description">
                     <div class="username">
@@ -65,7 +66,9 @@ layout: default
                    </span>
                         </div>
 
-                        <p class="disclaimer"><strong>Disclaimer</strong> The bitcoin address provided is not associated with this developer. UPDIP holds the funds until they will be claimed by them. Actually this ain't even a bitcoin address since the site has not launched officially</p>
+                        <p class="disclaimer"><strong>Disclaimer</strong> The bitcoin address provided is not associated
+                            with this developer. UPDIP holds the funds until they will be claimed by them. Actually this
+                            ain't even a bitcoin address since the site has not launched officially</p>
                     </div>
                 </div>
                 {% endif %}
