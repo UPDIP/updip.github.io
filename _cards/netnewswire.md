@@ -1,6 +1,1 @@
----
-username: netnewswire
-name: netnewswire
----
-
-[NetNewsWire](http://netnewswireapp.com)
+---username: netnewswirename: netnewswire---[NetNewsWire](http://netnewswireapp.com){:target="_blank"}

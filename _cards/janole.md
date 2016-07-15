@@ -1,6 +1,1 @@
----
-username: janole
-name: Jan Ole Suhr
----
-
-[Gravity](http://mobileways.de/products/gravity/gravity/)
+---username: janolename: Jan Ole Suhr---[Gravity](http://mobileways.de/products/gravity/gravity/){:target="_blank"}

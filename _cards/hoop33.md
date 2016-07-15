@@ -1,6 +1,1 @@
----
-username: hoop33
-name: Rob Warner
----
-
-[Wry](http://grailbox.com/wry/)
+---username: hoop33name: Rob Warner---[Wry](http://grailbox.com/wry/){:target="_blank"}

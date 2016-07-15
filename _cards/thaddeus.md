@@ -1,6 +1,1 @@
----
-username: thaddeus
-name: Thaddeus Ternes
----
-
-[Dossier](http://www.bluetoo.co/dossier)
+---username: thaddeusname: Thaddeus Ternes---[Dossier](http://www.bluetoo.co/dossier){:target="_blank"}

@@ -1,6 +1,1 @@
----
-username: joeldev
-name: Joel Levin
----
-
-[Orbit for Mac](http://orbitapp.net)
+---username: joeldevname: Joel Levin---[Orbit for Mac](http://orbitapp.net){:target="_blank"}

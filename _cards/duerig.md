@@ -1,6 +1,1 @@
----
-username: duerig
-name: Jonathon Duerig
----
-
-[Patter Web App](http://patter-app.net/)
+---username: duerigname: Jonathon Duerig---[Patter Web App](http://patter-app.net/){:target="_blank"}

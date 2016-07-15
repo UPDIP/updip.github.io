@@ -1,6 +1,1 @@
----
-username: mgrimes
-name: Mark Grimes
----
-
-[ADNCode](http://plugins.jetbrains.com/plugin/7492)
+---username: mgrimesname: Mark Grimes---[ADNCode](http://plugins.jetbrains.com/plugin/7492){:target="_blank"}
