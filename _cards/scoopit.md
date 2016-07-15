@@ -1,1 +1,6 @@
----username: scoopitname: scoop.it---[scoop.it](http://www.scoop.it){:target="_blank"}
+---
+username: scoopit
+name: scoop.it
+---
+
+[scoop.it](http://www.scoop.it){:target="_blank"}

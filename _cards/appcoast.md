@@ -1,1 +1,6 @@
----username: appcoastname: Appcoast---[Fireposts](https://addons.mozilla.org/en-US/firefox/addon/firepost/){:target="_blank"}
+---
+username: appcoast
+name: Appcoast
+---
+
+[Fireposts](https://addons.mozilla.org/en-US/firefox/addon/firepost/){:target="_blank"}

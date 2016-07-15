@@ -1,1 +1,6 @@
----username: loonytoonname: loonytoon---[Fit](http://fit-app.net){:target="_blank"}
+---
+username: loonytoon
+name: loonytoon
+---
+
+[Fit](http://fit-app.net){:target="_blank"}

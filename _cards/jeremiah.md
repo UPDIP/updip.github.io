@@ -1,1 +1,6 @@
----username: jeremiahname: Jeremiah Lee---[Stellar](http://stellarator.co){:target="_blank"}
+---
+username: jeremiah
+name: Jeremiah Lee
+---
+
+[Stellar](http://stellarator.co){:target="_blank"}

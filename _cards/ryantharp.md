@@ -1,1 +1,6 @@
----username: ryantharpname: Ryan Tharp---[Vidcast](http://vidcast-app.net){:target="_blank"}
+---
+username: ryantharp
+name: Ryan Tharp
+---
+
+[Vidcast](http://vidcast-app.net){:target="_blank"}
