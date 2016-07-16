@@ -23,6 +23,8 @@ $(function () {
           items[index].classList.add("hidden")
         }
       })
+      var event = new Event("search");
+      window.dispatchEvent(event);
     })
   })();
 });

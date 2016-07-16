@@ -93,6 +93,7 @@ $(function () {
 
     processScroll();
     addEventListener('scroll', processScroll);
+    addEventListener('search', processScroll);
 
   }(this);
 
