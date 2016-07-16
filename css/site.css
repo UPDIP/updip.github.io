@@ -232,7 +232,7 @@ p.disclaimer > strong {
     position: -webkit-sticky;
     position: sticky;
     top: 20px;
-
+    margin-bottom: 4.5em;
     /*-webkit-backdrop-filter: saturate(180%) blur(20px);*/
     /*backdrop-filter: saturate(180%) blur(20px);*/
 }
