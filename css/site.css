@@ -240,6 +240,9 @@ p.disclaimer > strong {
 .collapse-button {
     background: transparent;
     border: none;
-    font-size: 20px;
+    font-size: 1.2em;
+}
 
+.collapse-piper {
+    font-size: 1.2em;
 }
