@@ -236,3 +236,10 @@ p.disclaimer > strong {
     /*-webkit-backdrop-filter: saturate(180%) blur(20px);*/
     /*backdrop-filter: saturate(180%) blur(20px);*/
 }
+
+.collapse-button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+
+}

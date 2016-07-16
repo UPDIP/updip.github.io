@@ -26,7 +26,13 @@ layout: default
             </div>
 
 
-            <div class="form-horizontal">
+            <div class="col-sm-offset-3">
+                <button class="btn collapse-button" type="button" data-toggle="collapse" data-target="#collapse_{{ card.username }}" aria-expanded="false" aria-controls="collapse_{{ card.username }}">
+                    Show Info <i class="fa fa-pied-piper" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="form-horizontal collapse" id="collapse_{{ card.username }}">
 
                 {% if card.flattr %}
                 <!-- Flattr Button -->
