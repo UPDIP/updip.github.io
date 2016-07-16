@@ -63,7 +63,7 @@ a:hover {
 
     box-shadow: inset 0 0 8px rgba(47, 47, 47, 0.2);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -webkit-backdrop-filter: blur(10px);
+    /*-webkit-backdrop-filter: blur(10px);*/
 }
 
 .card:hover {
@@ -233,6 +233,6 @@ p.disclaimer > strong {
     position: sticky;
     top: 20px;
 
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+    /*-webkit-backdrop-filter: saturate(180%) blur(20px);*/
+    /*backdrop-filter: saturate(180%) blur(20px);*/
 }
