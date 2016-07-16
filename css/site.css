@@ -25,6 +25,7 @@ a.headline, a.headline:hover {
 
 .search-field input {
     font-family: 'HKGroteskRegular', sans-serif;
+    margin-bottom: -1em;
 }
 
 .logo {
