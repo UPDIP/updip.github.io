@@ -92,6 +92,10 @@ a:hover {
     font-size: 2em;
 }
 
+.username > a, a:hover, a:visited {
+    text-decoration: none;
+}
+
 footer {
     background: #525250;
     height: 10em;
