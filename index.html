@@ -2,127 +2,146 @@
 layout: default
 ---
 
-{% for card in site.cards %}
-
 <div class="card">
-
     <div class="row">
         <div class="col-sm-12">
-
-
-            <div class="row">
-                <div class="col-sm-3 text-right">
-                    <img src="/img/missing.png" data-src="http://img.updip.link/profiles/{{ card.username }}.png"
-                         alt="Avatar" class="img-avatar img-rounded img-responsive lazy">
+            <form action="/">
+                <div class="input-group-lg search-field">
+                    <input type="text" name="search" class="form-control animated-search-filter" placeholder="Search for developer or app" autofocus>
                 </div>
-                <div class="col-sm-9 user-description">
-                    <div class="username">
-                        <a href="https://alpha.app.net/{{ card.username }}" target="_blank">@{{ card.username }}</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="animated-search-filter">
+
+    {% for card in site.cards %}
+
+    <div class="card">
+
+        <div class="row">
+            <div class="col-sm-12">
+
+
+                <div class="row">
+                    <div class="col-sm-3 text-right">
+                        <img src="/img/missing.png" data-src="http://img.updip.link/profiles/{{ card.username }}.png"
+                             alt="Avatar" class="img-avatar img-rounded img-responsive lazy">
                     </div>
-
-                    {{ card.content }}
-
-                </div>
-            </div>
-
-
-            <div class="form-horizontal">
-
-                {% if card.flattr %}
-                <!-- Flattr Button -->
-                <div class="form-group">
-                    <label for="flattrButton" class="col-sm-3 control-label">Flattr</label>
-                    <div class="col-sm-9">
-
-                        <div class="alignment">
-                            <script id='fltr{{ card.flattr }}'>(function (i) {
-                                var f, s = document.getElementById(i);
-                                f = document.createElement('iframe');
-                                f.src = '//button.flattr.com/view/?user_id={{ card.flattr }}&button=compact&url=' + encodeURIComponent(document.URL);
-                                f.title = 'Flattr';
-                                f.height = 20;
-                                f.width = 110;
-                                f.style.borderWidth = 0;
-                                s.parentNode.insertBefore(f, s);
-                            })('fltr{{ card.flattr }}');</script>
+                    <div class="col-sm-9 user-description">
+                        <div class="username">
+                            <a href="https://alpha.app.net/{{ card.username }}" target="_blank">@{{ card.username }}</a>
                         </div>
 
+                        {{ card.content }}
+
                     </div>
                 </div>
-                {% endif %}
 
-                {% if card.bitcoin %}
-                <!-- Bitcoin Address -->
-                <div class="form-group">
-                    <label for="bitcoinAddress" class="col-sm-3 control-label">Bitcoin</label>
-                    <div class="col-sm-9">
-                        <div class="input-group">
-                            <input type="text" id="bitcoin{{ card.username }}" class="form-control"
-                                   readonly value="{{ card.bitcoin}}"/>
+
+                <div class="form-horizontal">
+
+                    {% if card.flattr %}
+                    <!-- Flattr Button -->
+                    <div class="form-group">
+                        <label for="flattrButton" class="col-sm-3 control-label">Flattr</label>
+                        <div class="col-sm-9">
+
+                            <div class="alignment">
+                                <script id='fltr{{ card.flattr }}'>(function (i) {
+                                    var f, s = document.getElementById(i);
+                                    f = document.createElement('iframe');
+                                    f.src = '//button.flattr.com/view/?user_id={{ card.flattr }}&button=compact&url=' + encodeURIComponent(document.URL);
+                                    f.title = 'Flattr';
+                                    f.height = 20;
+                                    f.width = 110;
+                                    f.style.borderWidth = 0;
+                                    s.parentNode.insertBefore(f, s);
+                                })('fltr{{ card.flattr }}');</script>
+                            </div>
+
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if card.bitcoin %}
+                    <!-- Bitcoin Address -->
+                    <div class="form-group">
+                        <label for="bitcoinAddress" class="col-sm-3 control-label">Bitcoin</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                                <input type="text" id="bitcoin{{ card.username }}" class="form-control"
+                                       readonly value="{{ card.bitcoin}}"/>
                      <span class="input-group-btn">
                        <button class="btn btn-default" data-clipboard-target="#bitcoin{{ card.username }}">
                        <img class="clippy" src="/img/clippy.svg" width="13" alt="Copy to Clipboard"/>
                      </button>
                    </span>
-                        </div>
+                            </div>
 
-                        <p class="disclaimer"><strong>Disclaimer</strong> The bitcoin address provided is not associated
-                            with this developer. UPDIP holds the funds until they will be claimed by them. Actually this
-                            ain't even a bitcoin address since the site has not launched officially</p>
-                    </div>
-                </div>
-                {% endif %}
-
-                {% if card.patreon %}
-                <!-- Patreon -->
-                <div class="form-group">
-                    <label for="patreon" class="col-sm-3 control-label">Patreon</label>
-                    <div class="col-sm-9">
-
-                        <a href="{{ card.patreon }}" class="btn btn-success" target="_blank">Become a patreon</a>
-
-                    </div>
-                </div>
-                {% endif %}
-
-                {% if card.paypal %}
-                <!-- Paypal -->
-                <div class="form-group">
-                    <label for="paypal" class="col-sm-3 control-label">PayPal</label>
-                    <div class="col-sm-9">
-
-                        <div>
-
-                            <a href="{{ card.paypal }}" class="btn btn-success" target="_blank">Donate with Paypal</a>
+                            <p class="disclaimer"><strong>Disclaimer</strong> The bitcoin address provided is not associated
+                                with this developer. UPDIP holds the funds until they will be claimed by them. Actually this
+                                ain't even a bitcoin address since the site has not launched officially</p>
                         </div>
                     </div>
-                </div>
-                {% endif %}
+                    {% endif %}
 
-                {% if card.cashme %}
-                <!-- CashMe -->
-                <div class="form-group">
-                    <label for="cashme" class="col-sm-3 control-label">Cashme</label>
-                    <div class="col-sm-9">
-                        <div>
-                            <a href="{{ card.cashme }}" class="btn btn-success" target="_blank">Donate via CashMe</a>
+                    {% if card.patreon %}
+                    <!-- Patreon -->
+                    <div class="form-group">
+                        <label for="patreon" class="col-sm-3 control-label">Patreon</label>
+                        <div class="col-sm-9">
+
+                            <a href="{{ card.patreon }}" class="btn btn-success" target="_blank">Become a patreon</a>
+
                         </div>
                     </div>
+                    {% endif %}
+
+                    {% if card.paypal %}
+                    <!-- Paypal -->
+                    <div class="form-group">
+                        <label for="paypal" class="col-sm-3 control-label">PayPal</label>
+                        <div class="col-sm-9">
+
+                            <div>
+
+                                <a href="{{ card.paypal }}" class="btn btn-success" target="_blank">Donate with Paypal</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if card.cashme %}
+                    <!-- CashMe -->
+                    <div class="form-group">
+                        <label for="cashme" class="col-sm-3 control-label">Cashme</label>
+                        <div class="col-sm-9">
+                            <div>
+                                <a href="{{ card.cashme }}" class="btn btn-success" target="_blank">Donate via CashMe</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+
                 </div>
-                {% endif %}
-
-
             </div>
         </div>
+
     </div>
 
+    {% endfor %}
+
+    <div class="paginator">
+        {% if paginator.next_page %}<span class="paginator-next"><a href="{{ paginator.next_page_path}}">Next</a></span>{%
+        endif %}
+        {% if paginator.previous_page %}<span class="paginator-previous"><a
+            href="{{ paginator.previous_path }}">Prev</a></span>{% endif %}
+    </div>
+
+
+
 </div>
 
-{% endfor %}
-
-<div class="paginator">
-    {% if paginator.next_page %}<span class="paginator-next"><a href="{{ paginator.next_page_path}}">Next</a></span>{%
-    endif %}
-    {% if paginator.previous_page %}<span class="paginator-previous"><a
-        href="{{ paginator.previous_path }}">Prev</a></span>{% endif %}
-</div>

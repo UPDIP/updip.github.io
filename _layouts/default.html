@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="/css/site.css">
     <script src="/js/shuffle.js"></script>
     <script src="/js/clipboard.min.js"></script>
+
+    {% if page.url == "/" %}
     <script src="/js/animated-search-filter.js"></script>
+    {% endif %}
+
     <script src="/js/stickyfill.min.js"></script>
 
     <script src="/js/lazyload.js"></script>
@@ -50,21 +54,8 @@
 
     <div class="content">
 
-        <div class="card">
-            <div class="row">
-                <div class="col-sm-12">
-                    <form action="/">
-                        <div class="input-group-lg search-field">
-                            <input type="text" name="search" class="form-control animated-search-filter" placeholder="Search for developer or app" autofocus>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        {{ content }}
 
-        <div class="animated-search-filter">
-            {{ content }}
-        </div>
     </div>
 
 
