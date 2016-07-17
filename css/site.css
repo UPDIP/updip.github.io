@@ -41,7 +41,7 @@ a, a:visited, a:hover {
 }
 
 a:hover {
-    color: #304637;
+    color: #fff3fa;
 }
 
 .alignment {
@@ -264,4 +264,18 @@ p.disclaimer > strong {
     margin-bottom: 5em;
     /*-webkit-backdrop-filter: saturate(180%) blur(20px);*/
     /*backdrop-filter: saturate(180%) blur(20px);*/
+}
+
+.collapse-button {
+    background: transparent;
+    border: none;
+    font-size: 1.2em;
+}
+
+a.collapse-button {
+    cursor: pointer !important;
+}
+
+.collapse-piper {
+    font-size: 1.2em;
 }
