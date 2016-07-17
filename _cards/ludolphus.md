@@ -11,5 +11,3 @@ paypal:
 * [ADN Filemanager](http://files-app.net){:target="_blank"} - Manage your files
 * [Xfer.li](http://cloud-app.net/welcome){:target="_blank"} - Share any file with anyone
 
-`Disclaimer` The bitcoin address provided is not associated with this developer. UPDIP holds the funds until they will be claimed by them.
-
