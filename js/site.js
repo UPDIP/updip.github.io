@@ -1,9 +1,7 @@
-// Activate clip
 $(function () {
+  // Activate clipboard
   var clip = new Clipboard('.btn');
-});
 
-// Use placeholder if avatar image is missing
-$(function () {
+  // Activate sticky sidebar
   $('.sticky').Stickyfill();
 });
