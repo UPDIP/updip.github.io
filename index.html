@@ -36,18 +36,17 @@ layout: default
 
                         {{ card.content }}
 
+                        <button class="btn collapse-button" type="button" data-toggle="collapse" data-target="#collapse_{{ card.username }}" aria-expanded="false" aria-controls="collapse_{{ card.username }}">
+                            Show Info >
+                        </button>
+
                     </div>
                 </div>
 
 
-            <div class="col-sm-offset-3">
-                <a class="collapse-button" type="button" data-toggle="collapse" data-target="#collapse_{{ card.username }}" aria-expanded="false" aria-controls="collapse_{{ card.username }}">
-                    Show Info >
-                </a>
 
 
 
-            </div>
 
             <div class="form-horizontal collapse" id="collapse_{{ card.username }}">
 
@@ -57,7 +56,7 @@ layout: default
                         <label for="flattrButton" class="col-sm-3 control-label">Flattr</label>
                         <div class="col-sm-9">
 
-                            <div class="alignment">
+                            <div>
                                 <script id='fltr{{ card.flattr }}'>(function (i) {
                                     var f, s = document.getElementById(i);
                                     f = document.createElement('iframe');
@@ -89,7 +88,7 @@ layout: default
                    </span>
                             </div>
 
-                            <p class="disclaimer"><strong>Disclaimer</strong> The bitcoin address provided is not associated
+                            <p class="user-disclaimer"><strong>Disclaimer</strong> The bitcoin address provided is not associated
                                 with this developer. UPDIP holds the funds until they will be claimed by them. Actually this
                                 ain't even a bitcoin address since the site has not launched officially</p>
                         </div>
