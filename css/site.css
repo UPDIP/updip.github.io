@@ -206,7 +206,7 @@ p.user-disclaimer > strong {
 }
 
 div.col-sm-9.user-description {
-    border-bottom: 1px dashed lightgrey;
+    /*border-bottom: 1px dashed lightgrey;*/
     padding-bottom: 1rem;
     padding-left: 0;
     padding-right: 0;
