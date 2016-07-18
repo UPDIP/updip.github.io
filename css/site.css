@@ -79,11 +79,28 @@ body {
     margin-bottom: -1em;
 }
 
-input.form-control {
+input.form-control, textarea#message.form-control {
     color: #f3e7ee;
     background: #525250 !important;
     border-color: #525250;
 }
+
+/* ***********************************  */
+/* *********** Contact Form **********  */
+/* ***********************************  */
+
+.has-error small {
+    display: none !important;
+}
+
+.has-error .control-label {
+    color: inherit !important;
+}
+
+.has-success .control-label {
+    color: inherit !important;
+}
+
 
 /* *********************************** */
 /* *********** Link Style ************ */
