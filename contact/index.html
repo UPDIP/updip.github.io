@@ -56,21 +56,22 @@ layout: default
             var email = $('#email').val();
             var message = $('#message').val();
 
-            try {
-                $.post("https://kwd.io/contact/contact.php?to=updip", {email: email, message: message}, function (response) {
-                    if (response.sent == 'yes') {
-                        $('.alert-success').removeClass('hidden');
-                    } else {
-                        $('.alert-danger').removeClass('hidden');
-                    }
-                });
-            } catch (err) {
+            $.post("https://kwd.io/contact/contact.php?to=updip", {
+                email: email,
+                message: message
+            }, function (response) {
+                if (response.sent == 'yes') {
+                    $(document.getElementsByName('message')).val("");
+                    $('.alert-success').removeClass('hidden');
+                } else {
+                    $('.alert-danger').removeClass('hidden');
+                }
+            }).fail(function (err) {
                 $('.alert-danger').removeClass('hidden');
-            }
+            });
         },
         live: 'enabled',
         fields: {
-
             email: {
                 message: 'Please enter a valid email address.',
                 validators: {
