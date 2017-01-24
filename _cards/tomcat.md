@@ -1,6 +1,6 @@
 ---
-username: Griff
-name: Mark
+username: tomcat
+name: Tomas
 bitcoin: 
 paypal: 
 ---

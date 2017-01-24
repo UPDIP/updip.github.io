@@ -1,6 +1,0 @@
----
-username: chriscolon
-name: Christoph Budzinski
----
-
-[Cauldron](https://cauldron-app.herokuapp.com/){:target="_blank"}

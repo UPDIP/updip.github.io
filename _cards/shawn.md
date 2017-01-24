@@ -1,6 +1,6 @@
 ---
-username: zapier
-name: Bryan Helmig
+username: shawn
+name: Shawn Throop
 ---
 
 [Zapier](https://zapier.com){:target="_blank"}

@@ -1,6 +1,6 @@
 ---
-username: Griff
-name: Mark
+username: c
+name: 
 bitcoin: 
 paypal: 
 ---
