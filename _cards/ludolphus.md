@@ -1,8 +1,8 @@
 ---
 username: ludolphus
 name: Steven van Loef
-bitcoin: 08154711
-paypal: 
+bitcoin: 1Ez54DG3EBYLhePCjQLNHm5qRK8cA49QBV
+paypal: https://paypal.me/ludolphus/10EUR
 ---
     
 * [ChimPnut](){:target="_blank"} - Feature complete client for iOS
