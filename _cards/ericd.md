@@ -4,4 +4,4 @@ name: Eric Dejonckheere
 Flattr: https://flattr.com/profile/ericd
 ---
 
-[Apero](){:target="_blank"}
+* [Apero](){:target="_blank"} - MacOS client
