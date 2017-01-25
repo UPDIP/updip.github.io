@@ -5,5 +5,5 @@ bitcoin:
 paypal:
 ---
     
-* [Golang client library](){:target="_blank"} - A Golang client library
+* [Peanuts](https://github.com/yukkurisinai/peanuts){:target="_blank"} - A Golang client library
 
