@@ -5,5 +5,5 @@ bitcoin:
 paypal: 
 ---
     
-* [](){:target="_blank"} - 
+* [Arachis](){:target="_blank"} - 
 
