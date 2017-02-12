@@ -5,7 +5,7 @@ layout: null
 <cards>
   {% for card in site.cards %}
     <card>
-      <title>{{ card.title | xml_escape }}</title>
+      <title>{{ card.title | xml_escape | downcase }}</title>
     </card>
   {% endfor %}
 </cards>
