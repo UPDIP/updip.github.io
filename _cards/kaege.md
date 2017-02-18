@@ -1,7 +1,7 @@
 ---
-username: kaege
-name: Kaege Y
+username: keage
+name: Keage Y
 ---
     
-* [](){:target="_blank"} - Photo-share extension for iOS
+* [Yachimata](){:target="_blank"} - Photo-share extension for iOS
 
