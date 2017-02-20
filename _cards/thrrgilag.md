@@ -7,4 +7,4 @@ cashme: https://cash.me/$thrrgilag
 ---
     
 * [Goober](https://code.monkeystew.net/thrrgilag/goober-bb10/releases){:target="_blank"} - A native BlackBerry 10 client.
-* [NuttyBot](){:target="_blank"} -
+* [NuttyBot](https://monkeystew.org/nuttybot/){:target="_blank"} - A bridge for connecting pnut.io with Telegram and Matrix
