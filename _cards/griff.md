@@ -1,9 +1,0 @@
----
-username: Griff
-name: Mark
-bitcoin: 
-paypal: 
----
-    
-* [](){:target="_blank"} - 
-
