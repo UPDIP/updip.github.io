@@ -5,7 +5,7 @@ bitcoin:
 paypal: 
 ---
     
-* [Patter](http://patter.s3rv.com){:target="_blank"} - PM and chat client.
+* [Patter](https://patter.chat){:target="_blank"} - Private Message and chat client.
 * [Noodle](https://noodle.s3rv.com){:target="_blank"} - Mobile-friendly web app.
 * [Brusque](https://chrome.google.com/webstore/detail/brusque/bohjpenpllkadgmknlgkahfbiepenhkj){:target="_blank"} - Chrome posting and notification extension.
 * [Robin](https://play.google.com/apps/testing/in.pnutrob.client.alpha){:target="_blank"} - Unstable alpha, with public timeline and chat and PM channels.

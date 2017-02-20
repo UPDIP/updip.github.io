@@ -3,4 +3,4 @@ username: duerig
 name: Jonathon Duerig
 ---
 
-* [Patter Web App](http://patter.s3rv.com){:target="_blank"}
+* [Patter](https://patter.chat){:target="_blank"} - Private Message and chat client.
