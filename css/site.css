@@ -30,7 +30,7 @@ body {
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    background-color: red;
+    background-color: palevioletred;
 }
 
 @media (max-width: 775px) {
@@ -144,6 +144,7 @@ h1.header {
     justify-content: flex-end;
 }
 
+
 @media (min-width: 750px) {
   .menu-bar {
     height: 60px;
@@ -172,7 +173,13 @@ a.menu-item, a.menu-item:hover, a.menu-item:visited {
   .menu-bar {
     flex-direction: column;
     margin-left: 40px;
+    display: none;
   }
+
+  .menu-bar.is-active {
+    display: block;
+  }
+
 }
 
 /* ***********************************  */
