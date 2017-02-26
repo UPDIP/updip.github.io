@@ -141,10 +141,11 @@ h1.header {
     margin-top: 24px;
     padding-bottom: 0;
     height: 60px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .menu-item {
-    float: right;
     margin-left: 1.5em;
     height: 1em;
 }
