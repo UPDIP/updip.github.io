@@ -134,9 +134,10 @@ h1.header {
     margin-bottom: 0.8em;
 }
 
-.inner-header {
-  padding-left: 20px;
-  padding-right: 20px;
+@media (max-width: 750px) {
+  h1.header {
+    padding-top: 50px;
+  }
 }
 
 /* ***********************************  */
@@ -163,7 +164,7 @@ h1.header {
 
 .menu-item-entry {
     padding-left: 1em;
-    padding-right: 1em;
+    /*padding-right: 1em;*/
     margin-top: -0.6em;
 }
 
@@ -177,7 +178,7 @@ a.menu-item, a.menu-item:hover, a.menu-item:visited {
 @media (max-width: 750px) {
   .menu-bar {
     flex-direction: column;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
     display: none;
   }
 
