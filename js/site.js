@@ -15,4 +15,10 @@ $(function () {
 
     state === up ? button.html(down) : button.html(up);
   });
+
+  var hamburgerButton = $('#hamburger-button');
+  hamburgerButton.click(function () {
+    hamburgerButton.toggleClass('is-active');
+  });
+
 });
