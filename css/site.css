@@ -140,9 +140,14 @@ h1.header {
 .menu-bar {
     margin-top: 24px;
     padding-bottom: 0;
-    height: 60px;
     display: flex;
     justify-content: flex-end;
+}
+
+@media (min-width: 750px) {
+  .menu-bar {
+    height: 60px;
+  }
 }
 
 .menu-item {
@@ -161,6 +166,13 @@ a.menu-item, a.menu-item:hover, a.menu-item:visited {
     color: #FFF8DA;
     font-weight: bold;
     display: block;
+}
+
+@media (max-width: 750px) {
+  .menu-bar {
+    flex-direction: column;
+    margin-left: 40px;
+  }
 }
 
 /* ***********************************  */
