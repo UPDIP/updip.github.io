@@ -121,7 +121,7 @@ h1.header {
 /* ************** Menu ***************  */
 /* ***********************************  */
 .menu-bar {
-    margin-top: 1em;
+    margin-top: 24px;
     padding-bottom: 0;
     height: 60px;
 }
