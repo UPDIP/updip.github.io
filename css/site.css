@@ -8,16 +8,8 @@ body {
     background: url('/img/background.jpg') no-repeat center fixed;
     background-size: cover;
     color: #FFF8DA !important;
-
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
 }
 
-.content {
-    width: 60%;
-    float: left;
-}
 
 @font-face {
     font-family: "1942";
@@ -25,13 +17,26 @@ body {
 }
 
 
-.site-content {
-    flex: 1;
-}
-
 .btn-success, .btn-success:hover {
     background-color: #525250;
     border-color: #525250;
+}
+
+/* Menu */
+.hamburger {
+  display: none;
+  position: absolute;
+  margin-top: 2px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: palevioletred;
+}
+
+@media (max-width: 775px) {
+  .hamburger {
+    display: block;
+  }
 }
 
 /* *********************************** */
@@ -45,8 +50,6 @@ body {
     opacity: 0.95;
     font-size: 1.2em;
 
-    width: 32%;
-    float: right;
 
     padding: 2em;
     background: rgba(255, 255, 255, 0.9);
@@ -64,6 +67,7 @@ body {
     height: 6.5em;
     float: left;
     margin-right: 15px;
+    animation-duration: 5s;
     -webkit-animation-duration: 5s;
 }
 
@@ -126,29 +130,42 @@ h1.header {
     padding-bottom: 20px;
     color: #252525;
     font-size: 32px;
-    z-index: 99999 !important;
+    /*z-index: 99999 !important;*/
     margin-bottom: 0.8em;
+}
+
+@media (max-width: 750px) {
+  h1.header {
+    padding-top: 50px;
+  }
 }
 
 /* ***********************************  */
 /* ************** Menu ***************  */
 /* ***********************************  */
 .menu-bar {
-    margin-bottom: -6em;
-    margin-top: 1em;
+    margin-top: 24px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media (min-width: 750px) {
+  .menu-bar {
+    height: 60px;
+  }
 }
 
 .menu-item {
-    height: 1em;
-    padding-top: 0.6em;
-    float: right;
     margin-left: 1.5em;
+    height: 1em;
 }
 
 .menu-item-entry {
-    margin-top: -1.4em;
     padding-left: 1em;
-    padding-right: 1em;
+    /*padding-right: 1em;*/
+    margin-top: -0.6em;
 }
 
 a.menu-item, a.menu-item:hover, a.menu-item:visited {
@@ -156,6 +173,19 @@ a.menu-item, a.menu-item:hover, a.menu-item:visited {
     color: #FFF8DA;
     font-weight: bold;
     display: block;
+}
+
+@media (max-width: 750px) {
+  .menu-bar {
+    flex-direction: column;
+    /*margin-left: 40px;*/
+    display: none;
+  }
+
+  .menu-bar.is-active {
+    display: block;
+  }
+
 }
 
 /* ***********************************  */

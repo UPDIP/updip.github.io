@@ -1,88 +1,99 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Updip</title>
+  <title>Updip</title>
 
-    <link rel="stylesheet" media="screen" href="//fontlibrary.org/face/hk-grotesk" type="text/css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="/js/jquery-2.2.4.min.js"></script>
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <script src="/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/css/animate.min.css">
-    <link rel="stylesheet" href="/css/site.css">
-    <script src="/js/shuffle.js"></script>
-    <script src="/js/clipboard.min.js"></script>
+  <link rel="stylesheet" media="screen" href="//fontlibrary.org/face/hk-grotesk" type="text/css" />
+  <script src="/js/jquery-2.2.4.min.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <script src="/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/animate.min.css">
+  <link rel="stylesheet" href="/css/hamburger.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <script src="/js/shuffle.js"></script>
+  <script src="/js/clipboard.min.js"></script>
 
-    {% if page.url == "/" %}
-    <script src="/js/animated-search-filter.js"></script>
-    {% endif %}
+  {% if page.url == "/" %}
+  <script src="/js/animated-search-filter.js"></script>
+  {% endif %}
 
-    <script src="/js/stickyfill.min.js"></script>
+  <script src="/js/stickyfill.min.js"></script>
 
-    <script src="/js/lazyload.js"></script>
+  <script src="/js/lazyload.js"></script>
 
-    <script src="/js/site.js"></script>
+  <script src="/js/site.js"></script>
 
-    <link href="/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/css/font-awesome.min.css" rel="stylesheet">
 </head>
+
 <body>
 
-<div class="container menu-bar">
+  <button id="hamburger-button" class="hamburger hamburger--spin" type="button">
+      <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+      </span>
+  </button>
 
-    <a class="card menu-item" href="/terms">
-        <div class="menu-item-entry">
-            <span>Terms of Service</span>
-        </div>
-    </a>
+  <div id="menu-bar" class="container menu-bar">
 
-    <a class="card menu-item" href="/contact">
-        <div class="menu-item-entry">
-            <span>Contact Us</span>
-        </div>
+    <a class="card menu-item" href="/">
+      <div class="menu-item-entry">
+        <span>Home</span>
+      </div>
     </a>
 
     <a class="card menu-item" href="/pong">
-        <div class="menu-item-entry">
-            <span>Pong</span>
-        </div>
+      <div class="menu-item-entry">
+        <span>Pong</span>
+      </div>
     </a>
 
-    <a class="card menu-item" href="/">
-        <div class="menu-item-entry">
-            <span>Home</span>
-        </div>
+    <a class="card menu-item" href="/contact">
+      <div class="menu-item-entry">
+        <span>Contact Us</span>
+      </div>
     </a>
 
-</div>
+    <a class="card menu-item" href="/terms">
+      <div class="menu-item-entry">
+        <span>Terms of Service</span>
+      </div>
+    </a>
 
-<h1 class="header text-center">UPDIP - User Powered Developer Incentive Program for Pnut.io</h1>
+  </div>
 
-<main class="site-content container">
+  <h1 class="header text-center">UPDIP - User Powered Developer Incentive Program for Pnut.io</h1>
 
-    <div class="content">
+  <main class="container">
 
-        {{ content }}
+    <div class="row">
+
+      <div class="col-md-8">
+        <div class="content">
+          {{ content }}
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div id="sidebar" class="sidebar sticky">
+          <p>
+            <img src="/img/logo.png" alt="UPDIP Logo" class="sidebar-logo animated" id="logo"> UPDIP let's you find all known
+            ways to send money to the maker of your most beloved apps. If there is a way to support a developer that is not
+            listed please click the 'Contact' button above and let us know about it.
+
+          </p>
+        </div>
+      </div>
 
     </div>
 
+  </main>
 
-    <div id="sidebar" class="sidebar sticky">
-
-        <p>
-            <img src="/img/logo.png" alt="UPDIP Logo" class="sidebar-logo animated" id="logo">
-
-            UPDIP lets you find all known ways to send money to the maker of your most beloved apps.
-            
-            If there is a way to support a developer that is not listed please click the 'Contact' button above and let us know about it.
-
-        </p>
-    </div>
-
-
-</main>
-
-{% include footer.html %}
+  {% include footer.html %}
 
 </body>
-</html>
 
+</html>

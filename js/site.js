@@ -15,4 +15,13 @@ $(function () {
 
     state === up ? button.html(down) : button.html(up);
   });
+
+  var hamburgerButton = $('#hamburger-button');
+  var menuBar = $('#menu-bar');
+  var hamburgerInner = $('.hamburger-inner')
+
+  hamburgerButton.click(function () {
+    hamburgerButton.toggleClass('is-active');
+    menuBar.toggleClass('is-active');
+  });
 });
