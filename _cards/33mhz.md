@@ -1,8 +1,7 @@
 ---
 username: 33mhz
 name: Robert
-bitcoin: 
-paypal: 
+patreon: https://www.patreon.com/pnut
 ---
     
 * [Patter](https://patter.chat){:target="_blank"} - Private Message and chat client.

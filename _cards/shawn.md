@@ -1,6 +1,7 @@
 ---
 username: shawn
 name: Shawn Throop
+paypal:
 ---
 
-* [Prose](){:target="_blank"} - A beautiful iOS client.
+* [Prose](){:target="_blank"} - iOS client for Pnut.
