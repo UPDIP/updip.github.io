@@ -3,4 +3,4 @@ username: doctorlinguist
 name: Gag Halfrunt
 ---
 
-* [texnut](){:target="_blank"} - 
+* [texnut](http://www.floodgap.com/software/texnut/){:target="_blank"} - Texnut is a command-line client based on Texapp 
