@@ -1,5 +1,5 @@
 ---
-username: 33mhz
+username: 33MHz
 name: Robert
 patreon: https://www.patreon.com/pnut
 ---
