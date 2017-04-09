@@ -18,113 +18,116 @@ layout: default
 
     {% for card in site.cards %}
 
-    <div class="card">
+<div class="card">
 
-        <div class="row">
-            <div class="col-sm-12">
+    <div class="row">
+        <div class="col-sm-12">
 
+            <div class="row">
 
-                <div class="row">
-                    <div class="col-sm-3 text-right">
-                        <img src="/img/missing.png" data-src="http://img.updip.link/profiles/{{ card.username }}.png"
-                             alt="Avatar" class="img-avatar img-rounded img-responsive lazy">
-                    </div>
-                    <div class="col-sm-9 user-description">
-                        <div class="username">
-                            <a href="https://noodle.s3rv.com/user/{{ card.username }}" target="_blank">@{{ card.username }}</a>
-                        </div>
-
-                        {{ card.content }}
-                    </div>
+                <div class="col-sm-3 text-right">
+                    <img src="/img/missing.png" data-src="http://img.updip.link/profiles/{{ card.username }}.png" alt="Avatar" class="img-avatar img-rounded img-responsive lazy">
                 </div>
 
-            <div class="form-horizontal" id="collapse_{{ card.username }}">
-
-                    {% if card.flattr %}
-                    <!-- Flattr Button -->
-                    <div class="form-group">
-                        <label for="flattrButton" class="col-sm-3 control-label">Flattr</label>
-                        <div class="col-sm-9">
-
-                            <div>
-                                <script id='fltr{{ card.flattr }}'>(function (i) {
-                                    var f, s = document.getElementById(i);
-                                    f = document.createElement('iframe');
-                                    f.src = '//button.flattr.com/view/?user_id={{ card.flattr }}&button=compact&url=' + encodeURIComponent(document.URL);
-                                    f.title = 'Flattr';
-                                    f.height = 20;
-                                    f.width = 110;
-                                    f.style.borderWidth = 0;
-                                    s.parentNode.insertBefore(f, s);
-                                })('fltr{{ card.flattr }}');</script>
-                            </div>
-
-                        </div>
+                <div class="col-sm-9 user-description">
+                    <div class="username">
+                        <a href="https://noodle.s3rv.com/user/{{ card.username }}" target="_blank">@{{ card.username }}</a>
                     </div>
-                    {% endif %}
 
-                    {% if card.bitcoin %}
-                    <!-- Bitcoin Address -->
-                    <div class="form-group">
-                        <label for="bitcoinAddress" class="col-sm-3 control-label">Bitcoin</label>
-                        <div class="col-sm-9">
-                            <div class="input-group">
-                                <input type="text" id="bitcoin{{ card.username }}" class="form-control"
-                                       readonly value="{{ card.bitcoin}}"/>
-                     <span class="input-group-btn">
-                       <button class="btn btn-default" data-clipboard-target="#bitcoin{{ card.username }}">
-                       <img class="clippy" src="/img/clippy.svg" width="13" alt="Copy to Clipboard"/>
-                     </button>
-                   </span>
+                    <h3><span class="label label-default">Get Nuts</span></h3>
+
+                    {{ card.content }}
+
+                    <h3><span class="label label-default">Give Nuts</span></h3>
+
+                    <!-- BEGIN FORM -->
+                    <div class="form-horizontal" id="collapse_{{ card.username }}">
+
+                        {% if card.flattr %}
+                        <!-- Flattr Button -->
+                        <div class="form-group">
+                            <label for="flattrButton" class="col-sm-3 control-label">Flattr</label>
+                            <div class="col-sm-9">
+
+                                <div>
+                                    <script id='fltr{{ card.flattr }}'>
+                                        (function (i) {
+                                            var f, s = document.getElementById(i);
+                                            f = document.createElement('iframe');
+                                            f.src = '//button.flattr.com/view/?user_id={{ card.flattr }}&button=compact&url=' + encodeURIComponent(document.URL);
+                                            f.title = 'Flattr';
+                                            f.height = 20;
+                                            f.width = 110;
+                                            f.style.borderWidth = 0;
+                                            s.parentNode.insertBefore(f, s);
+                                        })('fltr{{ card.flattr }}');
+                                    </script>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
-                    {% endif %}
-
-                    {% if card.patreon %}
-                    <!-- Patreon -->
-                    <div class="form-group">
-                        <label for="patreon" class="col-sm-3 control-label">Patreon</label>
-                        <div class="col-sm-9">
-
-                            <a href="{{ card.patreon }}" class="btn btn-success" target="_blank">Become a patreon</a>
-
-                        </div>
-                    </div>
-                    {% endif %}
-
-                    {% if card.paypal %}
-                    <!-- Paypal -->
-                    <div class="form-group">
-                        <label for="paypal" class="col-sm-3 control-label">PayPal</label>
-                        <div class="col-sm-9">
-
-                            <div>
-
-                                <a href="{{ card.paypal }}" class="btn btn-success" target="_blank">Donate with Paypal</a>
+                        {% endif %} {% if card.bitcoin %}
+                        <!-- Bitcoin Address -->
+                        <div class="form-group">
+                            <label for="bitcoinAddress" class="col-sm-3 control-label">Bitcoin</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                    <input type="text" id="bitcoin{{ card.username }}" class="form-control" readonly value="{{ card.bitcoin}}" />
+                                    <span class="input-group-btn">
+                            <button class="btn btn-default" data-clipboard-target="#bitcoin{{ card.username }}">
+                            <img class="clippy" src="/img/clippy.svg" width="13" alt="Copy to Clipboard"/>
+                            </button>
+                        </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    {% endif %}
+                        {% endif %} {% if card.patreon %}
+                        <!-- Patreon -->
+                        <div class="form-group">
+                            <label for="patreon" class="col-sm-3 control-label">Patreon</label>
+                            <div class="col-sm-9">
 
-                    {% if card.cashme %}
-                    <!-- CashMe -->
-                    <div class="form-group">
-                        <label for="cashme" class="col-sm-3 control-label">Cashme</label>
-                        <div class="col-sm-9">
-                            <div>
-                                <a href="{{ card.cashme }}" class="btn btn-success" target="_blank">Donate via CashMe</a>
+                                <a href="{{ card.patreon }}" class="btn btn-success" target="_blank">Become a patreon</a>
+
                             </div>
                         </div>
-                    </div>
-                    {% endif %}
+                        {% endif %} {% if card.paypal %}
+                        <!-- Paypal -->
+                        <div class="form-group">
+                            <label for="paypal" class="col-sm-3 control-label">PayPal</label>
+                            <div class="col-sm-9">
 
+                                <div>
+
+                                    <a href="{{ card.paypal }}" class="btn btn-success" target="_blank">Donate with Paypal</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %} {% if card.cashme %}
+                        <!-- CashMe -->
+                        <div class="form-group">
+                            <label for="cashme" class="col-sm-3 control-label">Cashme</label>
+                            <div class="col-sm-9">
+                                <div>
+                                    <a href="{{ card.cashme }}" class="btn btn-success" target="_blank">Donate via CashMe</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+
+
+                    </div>
+                    <!-- END Form-->
 
                 </div>
+
             </div>
-        </div>
 
+
+        </div>
     </div>
+
+</div>
 
     {% endfor %}
 
