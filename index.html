@@ -35,20 +35,10 @@ layout: default
                         </div>
 
                         {{ card.content }}
-
-                        <button class="btn btn-default btn-xs collapse-button" type="button" data-toggle="collapse" data-target="#collapse_{{ card.username }}" aria-expanded="false" aria-controls="collapse_{{ card.username }}">
-                            Show Info <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                        </button>
-
                     </div>
                 </div>
 
-
-
-
-
-
-            <div class="form-horizontal collapse" id="collapse_{{ card.username }}">
+            <div class="form-horizontal" id="collapse_{{ card.username }}">
 
                     {% if card.flattr %}
                     <!-- Flattr Button -->
@@ -87,9 +77,6 @@ layout: default
                      </button>
                    </span>
                             </div>
-
-                            <p class="user-disclai  "><strong>Note:</strong> The bitcoin address provided is directly associated
-                                with this developer. UPDIP does not hold any funds.</p>
                         </div>
                     </div>
                     {% endif %}
