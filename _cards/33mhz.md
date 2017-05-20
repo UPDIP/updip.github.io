@@ -2,6 +2,7 @@
 username: 33MHz
 name: Robert
 patreon: https://www.patreon.com/pnut
+bitcoin: 1M7DrVS9qWuSdVzTmcu4LMFfsYQjws7aVq
 ---
 
 * [Pnut API](https://github.com/pnut-api){:target="_blank"} - The API!    
