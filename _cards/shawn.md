@@ -4,4 +4,4 @@ name: Shawn Throop
 paypal:
 ---
 
-* [Prose](){:target="_blank"} - iOS client for Pnut.io
+* [Prose](){:target="_blank"} - iOS client (not yet released)

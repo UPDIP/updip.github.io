@@ -5,4 +5,4 @@ bitcoin: 1N6ngH2bkjPH74iSZskPZhmQz2xCW97Cn8
 
 ---
 
-* [Enuts](http://kyo5884.tk/enuts/){:target="_blank"} - A Windows and MacOS desktop client app for pnut.io
+* [Enuts](http://kyo5884.tk/enuts/){:target="_blank"} - A Windows and MacOS desktop client

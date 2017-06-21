@@ -5,4 +5,4 @@ bitcoin:
 paypal: 
 ---
     
-* [Catchat](http://snipergirl.com/catchat/){:target="_blank"} - 10C, ADN and Pnut timeline on one page.
+* [Catchat](http://snipergirl.com/catchat/){:target="_blank"} - 10Century and Pnut.io timeline on one page
