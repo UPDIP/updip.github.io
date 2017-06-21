@@ -6,4 +6,4 @@ patreon: https://www.patreon.com/posts/working-on-8153953
 paypal: paypal.me/dasdom
 ---
 
-* [Phazel](https://github.com/dasdom/phazel){:target="_blank"} - iOS client for pnut.io
+* [Phazel](https://github.com/dasdom/phazel){:target="_blank"} - iOS client
