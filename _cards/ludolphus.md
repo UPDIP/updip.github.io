@@ -1,7 +1,7 @@
 ---
 username: ludolphus
 name: Steven van Loef
-bitcoin: 1BJhTzwzdMi4VCy2WDW8k6FsQtPM4wKAm3
+bitcoin: 1DmWYv3LbZwCcoQUxEkgGaN3Qt4RvXAM7g
 paypal: https://paypal.me/ludolphus/10EUR
 ---
     
