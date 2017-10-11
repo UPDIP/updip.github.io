@@ -2,6 +2,7 @@
 username: kwood
 name: Kai Wood
 bitcoin: 1MHUcPfL7dMKLNxBvxyu6jekQrrRqpCZLP
+paypal: https://www.paypal.me/kaiwood
 ---
 
 * [Jelly Time](http://jellytime.net){:target="_blank"} - A web client for every browser and screen size
