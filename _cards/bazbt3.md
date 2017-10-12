@@ -4,4 +4,4 @@ name: Baz
 paypal: https://www.paypal.me/bazbt3
 ---
 
-* [Pnut Wiki](https://github.com/bazbt3/pnut_io_stuff/wiki){:target="_blank"} - The Pnut wiki
+* [Pnut Wiki](https://wiki.pnut.io/Main_Page){:target="_blank"} - The Pnut wiki
